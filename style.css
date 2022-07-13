@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+display: flex;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  margin-right: 2rem;
+  height: 100vh;
+  width: 15vw;
+
+  box-shadow: .4rem 0 5rem rgb(155, 146, 146);
+
+
+}
+
+nav .logo{
+  width: 100%;
+  margin-bottom: 1rem;
+  border-bottom: .2rem solid rgb(89, 193, 219);
+}
+
+nav div img{
+  height: 100%;
+  width: 100%;
+}
+
+nav .busca {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav input {
+  margin-left: .8rem;
+  height: 3rem;
+  font-size: 2rem;
+  width: 80%;
+  border: .1rem solid rgb(192, 192, 192);
+  border-radius: .8rem;
+}
+
+nav input:focus {
+  outline: none;
+  
+}
+
+nav p {
+  font-family: 'Poppins';
+  font-size: 1.9rem;
+  text-align: center;
+  margin: 1rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+  justify-items: center;
+  align-content: center;
+
+  width: 85vw;
+}
+
+main .card {
+  margin: 2rem 0;
+  width: 13rem;
+  height: 15rem;
+  
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1rem 1rem 5px rgb(155, 146, 146);
+  border-radius: .8rem;
+}
+main .card img {
+  width: 100%;
+  height: 100%;
+  border-radius: .8rem;
+}
+
+main .card p {
+  margin-top: 1rem;
+  text-align: center;
+  font-family: 'Poppins';
+  font-weight: 600;
+}
+
+main div:hover {
+  cursor: pointer;
+}
+
+/* The Modal (background) */
+.modal {
+display: none;
+ position: fixed; /* Stay in place */
+ z-index: 1; /* Sit on top */
+ padding-top: 100px; /* Location of the box */
+ left: 0;
+ top: 0;
+ width: 100%; /* Full width */
+ height: 100%; /* Full height */
+ overflow: auto; /* Enable scroll if needed */
+ background-color: rgb(0,0,0); /* Fallback color */
+ background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+ background-color: red;
+ margin: auto;
+ padding: 20px;
+ border: 1px solid #888;
+ width: 80%;
+}
+
+/* The Close Button */
+.close {
+ color: #aaaaaa;
+ float: right;
+ font-size: 28px;
+ font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+ color: #000;
+ text-decoration: none;
+ cursor: pointer;
+}
